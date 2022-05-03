@@ -13,7 +13,7 @@ class GFGTest {
     void findLongestConsecutiveSubsetTest_8() throws Exception {
         int[] arr = {1, 2, 3, 4, 9, 10, 20,
                 22, 23, 24, 25, 26, 27, 28,
-                39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49,
+                39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53,
                 100, 101, 102};
         int n = arr.length;
 
