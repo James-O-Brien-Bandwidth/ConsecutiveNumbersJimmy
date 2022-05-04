@@ -16,14 +16,14 @@ class GFG {
         int sizeRequestedByCustomer = 8;
 
         LocalDateTime start = LocalDateTime.now();
-        System.out.println(findLongestConsecutiveSubset(orderedArrayFromDb, sizeRequestedByCustomer));
+//        System.out.println(findLongestConsecutiveSubset(orderedArrayFromDb, sizeRequestedByCustomer));
         LocalDateTime end = LocalDateTime.now();
-        System.out.println("Time taken: " + (end.getNano() - start.getNano()));
+//        System.out.println("Time taken: " + (end.getNano() - start.getNano()));
 
         LocalDateTime start2 = LocalDateTime.now();
-        System.out.println(findLongestConsecutiveSubset2(orderedArrayFromDb, sizeRequestedByCustomer));
+//        System.out.println(findLongestConsecutiveSubset2(orderedArrayFromDb, sizeRequestedByCustomer));
         LocalDateTime end2 = LocalDateTime.now();
-        System.out.println("Time taken: " + (end2.getNano() - start2.getNano()));
+//        System.out.println("Time taken: " + (end2.getNano() - start2.getNano()));
     }
 
     static ArrayList<Integer> findLongestConsecutiveSubset(int[] queryReturnedFromArray, int sizeRequestedByCustomer) throws Exception {
@@ -44,7 +44,7 @@ class GFG {
                 ArrayList<Integer> consecutiveList = new ArrayList<>();
                 for (int j = 1; j < sizeRequestedByCustomer + 1; j++) {
                     consecutiveList.add(queryReturnedFromArray[positionInArray - sizeRequestedByCustomer + j]);
-                    System.out.println(queryReturnedFromArray[positionInArray - sizeRequestedByCustomer + j]);
+//                    System.out.println(queryReturnedFromArray[positionInArray - sizeRequestedByCustomer + j]);
                 }
                 return consecutiveList;
             }

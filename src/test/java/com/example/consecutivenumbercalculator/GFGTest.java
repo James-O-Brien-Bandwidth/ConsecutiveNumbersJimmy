@@ -1,7 +1,7 @@
 package com.example.consecutivenumbercalculator;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.RepeatedTest;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -18,7 +18,7 @@ class GFGTest {
 
     private static final ObjectMapper objectMapper = new ObjectMapper();
 
-    @Test
+    @RepeatedTest(value = 300)
     void findLongestConsecutiveSubsetTest_8() throws Exception {
         int[] numberArray = readFromFile("src/main/resources/PhoneNumberList.json");
 
@@ -28,10 +28,10 @@ class GFGTest {
         ArrayList<Integer> actualList = findLongestConsecutiveSubset(numberArray, requestedSize);
         LocalDateTime end = LocalDateTime.now();
 
-        int timeTakenInMilliSecond = (start.getNano() - end.getNano()) / 1000000;
+        int timeTakenInMilliSecond = (end.getNano() - start.getNano()) / 1000000;
 
-        System.out.println(timeTakenInMilliSecond);
-        assertTrue(timeTakenInMilliSecond < 20);
+        System.out.println("Actual Time taken: " + timeTakenInMilliSecond);
+        assertTrue(timeTakenInMilliSecond < 15);
 
         assertEquals(actualList.get(0), 944);
         assertEquals(actualList.get(1), 945);
@@ -45,7 +45,7 @@ class GFGTest {
         assertEquals(8, actualList.size());
     }
 
-    @Test
+    @RepeatedTest(value = 300)
     void findLongestConsecutiveSubsetTest_6() throws Exception {
         int[] numberArray = readFromFile("src/main/resources/PhoneNumberList.json");
 
@@ -55,10 +55,10 @@ class GFGTest {
         ArrayList<Integer> actualList = findLongestConsecutiveSubset(numberArray, requestedSize);
         LocalDateTime end = LocalDateTime.now();
 
-        int timeTakenInMilliSecond = (start.getNano() - end.getNano()) / 1000000;
+        int timeTakenInMilliSecond = (end.getNano() - start.getNano()) / 1000000;
 
-        System.out.println(timeTakenInMilliSecond);
-        assertTrue(timeTakenInMilliSecond < 20);
+        System.out.println("Actual Time taken: " + timeTakenInMilliSecond);
+        assertTrue(timeTakenInMilliSecond < 15);
 
         assertEquals(actualList.get(0), 555);
         assertEquals(actualList.get(1), 556);
@@ -69,7 +69,7 @@ class GFGTest {
         assertEquals(6, actualList.size());
     }
 
-    @Test
+    @RepeatedTest(value = 300)
     void findLongestConsecutiveSubsetTest_4() throws Exception {
         int[] numberArray = readFromFile("src/main/resources/PhoneNumberList.json");
 
@@ -79,10 +79,10 @@ class GFGTest {
         ArrayList<Integer> actualList = findLongestConsecutiveSubset(numberArray, requestedSize);
         LocalDateTime end = LocalDateTime.now();
 
-        int timeTakenInMilliSecond = (start.getNano() - end.getNano()) / 1000000;
+        int timeTakenInMilliSecond = (end.getNano() - start.getNano()) / 1000000;
 
-        System.out.println(timeTakenInMilliSecond);
-        assertTrue(timeTakenInMilliSecond < 20);
+        System.out.println("Actual Time taken: " + timeTakenInMilliSecond);
+        assertTrue(timeTakenInMilliSecond < 15);
 
         assertEquals(actualList.get(0), 300);
         assertEquals(actualList.get(1), 301);
@@ -91,7 +91,7 @@ class GFGTest {
         assertEquals(4, actualList.size());
     }
 
-    @Test
+    @RepeatedTest(value = 300)
     void findLongestConsecutiveSubsetTest_whereConsecutiveSizeIsNotPresent_ThenReturnEmptyArray() throws Exception {
         int[] numberArray = readFromFile("src/main/resources/PhoneNumberList.json");
 
@@ -101,15 +101,15 @@ class GFGTest {
         ArrayList<Integer> actualList = findLongestConsecutiveSubset(numberArray, requestedSize);
         LocalDateTime end = LocalDateTime.now();
 
-        int timeTakenInMilliSecond = (start.getNano() - end.getNano()) / 1000000;
+        int timeTakenInMilliSecond = (end.getNano() - start.getNano()) / 1000000;
 
-        System.out.println(timeTakenInMilliSecond);
-        assertTrue(timeTakenInMilliSecond < 20);
+        System.out.println("Actual Time taken: " + timeTakenInMilliSecond);
+        assertTrue(timeTakenInMilliSecond < 15);
 
         assertEquals(0, actualList.size());
     }
 
-    @Test
+    @RepeatedTest(value = 300)
     void findLongestConsecutiveSubsetTest2_8() throws Exception {
         int[] numberArray = readFromFile("src/main/resources/PhoneNumberList.json");
 
@@ -119,10 +119,10 @@ class GFGTest {
         ArrayList<Integer> actualList = findLongestConsecutiveSubset2(numberArray, requestedSize);
         LocalDateTime end = LocalDateTime.now();
 
-        int timeTakenInMilliSecond = (start.getNano() - end.getNano()) / 1000000;
+        int timeTakenInMilliSecond = (end.getNano() - start.getNano()) / 1000000;
 
-        System.out.println(timeTakenInMilliSecond);
-        assertTrue(timeTakenInMilliSecond < 20);
+        System.out.println("Actual Time taken: " + timeTakenInMilliSecond);
+        assertTrue(timeTakenInMilliSecond < 15);
 
         assertEquals(actualList.get(0), 944);
         assertEquals(actualList.get(1), 945);
@@ -141,7 +141,7 @@ class GFGTest {
         return objectMapper.readValue(fileToJson, int[].class);
     }
 
-    @Test
+    @RepeatedTest(value = 300)
     void findLongestConsecutiveSubsetTest2_6() throws Exception {
         int[] numberArray = readFromFile("src/main/resources/PhoneNumberList.json");
 
@@ -151,10 +151,10 @@ class GFGTest {
         ArrayList<Integer> actualList = findLongestConsecutiveSubset2(numberArray, requestedSize);
         LocalDateTime end = LocalDateTime.now();
 
-        int timeTakenInMilliSecond = (start.getNano() - end.getNano()) / 1000000;
+        int timeTakenInMilliSecond = (end.getNano() - start.getNano()) / 1000000;
 
-        System.out.println(timeTakenInMilliSecond);
-        assertTrue(timeTakenInMilliSecond < 20);
+        System.out.println("Actual Time taken: " + timeTakenInMilliSecond);
+        assertTrue(timeTakenInMilliSecond < 15);
 
         assertEquals(actualList.get(0), 555);
         assertEquals(actualList.get(1), 556);
@@ -165,7 +165,7 @@ class GFGTest {
         assertEquals(6, actualList.size());
     }
 
-    @Test
+    @RepeatedTest(value = 300)
     void findLongestConsecutiveSubsetTest2_4() throws Exception {
         int[] numberArray = readFromFile("src/main/resources/PhoneNumberList.json");
 
@@ -175,10 +175,10 @@ class GFGTest {
         ArrayList<Integer> actualList = findLongestConsecutiveSubset2(numberArray, requestedSize);
         LocalDateTime end = LocalDateTime.now();
 
-        int timeTakenInMilliSecond = (start.getNano() - end.getNano()) / 1000000;
+        int timeTakenInMilliSecond = (end.getNano() - start.getNano()) / 1000000;
 
-        System.out.println(timeTakenInMilliSecond);
-        assertTrue(timeTakenInMilliSecond < 20);
+        System.out.println("Actual Time taken: " + timeTakenInMilliSecond);
+        assertTrue(timeTakenInMilliSecond < 15);
 
         assertEquals(actualList.get(0), 300);
         assertEquals(actualList.get(1), 301);
@@ -187,7 +187,7 @@ class GFGTest {
         assertEquals(4, actualList.size());
     }
 
-    @Test
+    @RepeatedTest(value = 300)
     void findLongestConsecutiveSubsetTest2_whereConsecutiveSizeIsNotPresent_ThenReturnEmptyArray() throws Exception {
         int[] numberArray = readFromFile("src/main/resources/PhoneNumberList.json");
 
@@ -197,10 +197,10 @@ class GFGTest {
         ArrayList<Integer> actualList = findLongestConsecutiveSubset2(numberArray, requestedSize);
         LocalDateTime end = LocalDateTime.now();
 
-        int timeTakenInMilliSecond = (start.getNano() - end.getNano()) / 1000000;
+        int timeTakenInMilliSecond = (end.getNano() - start.getNano()) / 1000000;
 
-        System.out.println(timeTakenInMilliSecond);
-        assertTrue(timeTakenInMilliSecond < 20);
+        System.out.println("Actual Time taken: " + timeTakenInMilliSecond);
+        assertTrue(timeTakenInMilliSecond < 15);
 
         assertEquals(0, actualList.size());
     }
