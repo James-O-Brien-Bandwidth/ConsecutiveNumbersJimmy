@@ -30,7 +30,7 @@ class GFGTest {
 
         int timeTakenInMilliSecond = (end.getNano() - start.getNano()) / 1000000;
 
-        System.out.println("Actual Time taken: " + timeTakenInMilliSecond);
+        System.out.println("Actual Time taken in milliseconds:" + timeTakenInMilliSecond);
         assertTrue(timeTakenInMilliSecond < 15);
 
         assertEquals(actualList.get(0), 944);
@@ -57,7 +57,7 @@ class GFGTest {
 
         int timeTakenInMilliSecond = (end.getNano() - start.getNano()) / 1000000;
 
-        System.out.println("Actual Time taken: " + timeTakenInMilliSecond);
+        System.out.println("Actual Time taken in milliseconds:" + timeTakenInMilliSecond);
         assertTrue(timeTakenInMilliSecond < 15);
 
         assertEquals(actualList.get(0), 555);
@@ -81,7 +81,7 @@ class GFGTest {
 
         int timeTakenInMilliSecond = (end.getNano() - start.getNano()) / 1000000;
 
-        System.out.println("Actual Time taken: " + timeTakenInMilliSecond);
+        System.out.println("Actual Time taken in milliseconds:" + timeTakenInMilliSecond);
         assertTrue(timeTakenInMilliSecond < 15);
 
         assertEquals(actualList.get(0), 300);
@@ -103,7 +103,7 @@ class GFGTest {
 
         int timeTakenInMilliSecond = (end.getNano() - start.getNano()) / 1000000;
 
-        System.out.println("Actual Time taken: " + timeTakenInMilliSecond);
+        System.out.println("Actual Time taken in milliseconds:" + timeTakenInMilliSecond);
         assertTrue(timeTakenInMilliSecond < 15);
 
         assertEquals(0, actualList.size());
@@ -121,7 +121,7 @@ class GFGTest {
 
         int timeTakenInMilliSecond = (end.getNano() - start.getNano()) / 1000000;
 
-        System.out.println("Actual Time taken: " + timeTakenInMilliSecond);
+        System.out.println("Actual Time taken in milliseconds:" + timeTakenInMilliSecond);
         assertTrue(timeTakenInMilliSecond < 15);
 
         assertEquals(actualList.get(0), 944);
@@ -153,7 +153,7 @@ class GFGTest {
 
         int timeTakenInMilliSecond = (end.getNano() - start.getNano()) / 1000000;
 
-        System.out.println("Actual Time taken: " + timeTakenInMilliSecond);
+        System.out.println("Actual Time taken in milliseconds:" + timeTakenInMilliSecond);
         assertTrue(timeTakenInMilliSecond < 15);
 
         assertEquals(actualList.get(0), 555);
@@ -177,7 +177,7 @@ class GFGTest {
 
         int timeTakenInMilliSecond = (end.getNano() - start.getNano()) / 1000000;
 
-        System.out.println("Actual Time taken: " + timeTakenInMilliSecond);
+        System.out.println("Actual Time taken in milliseconds: " + timeTakenInMilliSecond);
         assertTrue(timeTakenInMilliSecond < 15);
 
         assertEquals(actualList.get(0), 300);
@@ -199,7 +199,7 @@ class GFGTest {
 
         int timeTakenInMilliSecond = (end.getNano() - start.getNano()) / 1000000;
 
-        System.out.println("Actual Time taken: " + timeTakenInMilliSecond);
+        System.out.println("Actual Time taken in milliseconds:" + timeTakenInMilliSecond);
         assertTrue(timeTakenInMilliSecond < 15);
 
         assertEquals(0, actualList.size());
