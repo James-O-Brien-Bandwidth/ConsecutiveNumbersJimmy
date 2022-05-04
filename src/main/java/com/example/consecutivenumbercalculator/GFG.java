@@ -1,7 +1,9 @@
 package com.example.consecutivenumbercalculator;// Java program to find longest
 // contiguous subsequence
 
+import java.time.LocalDateTime;
 import java.util.ArrayList;
+import java.util.Set;
 
 class GFG {
 
@@ -49,7 +51,7 @@ class GFG {
 
         }
         //If no selection is available, return empty list
-        throw new ArrayList<>();
+        return new ArrayList<>();
     }
 
     static ArrayList<Integer> findLongestConsecutiveSubset2(int[] queryReturnedFromArray, int sizeRequestedByCustomer) throws Exception {
